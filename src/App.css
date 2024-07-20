@@ -1,0 +1,19 @@
+:root {
+  --primary-bg: #151515ff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+}
+
+.App {
+  background-color: var(--primary-bg);
+  color: white;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+ overflow-x: hidden;
+  align-items: center;
+}

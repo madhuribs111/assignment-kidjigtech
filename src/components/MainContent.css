@@ -1,0 +1,128 @@
+.main-content {
+  width: 100%;
+  height: 100vh; /* Adjusted to viewport height */
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Adjusted for column layout */
+  padding: 20px; /* Added padding */
+  box-sizing: border-box; /* Added for box-sizing */
+  overflow: hidden; /* Hide overflow to prevent scrollbars */
+}
+
+.ellipse-1{
+  position: absolute;
+  max-width: 100%; /* Ensure it doesn't overflow */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.ellipse-1 {
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+
+.text-group {
+  position: relative;
+  text-align: left;
+  z-index: 1;
+  max-width: 90%; /* Added max-width */
+}
+
+.heading {
+  color: #ffffff;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 4vw; /* Adjusted for relative size */
+  letter-spacing: -0.56px;
+  line-height: 1.2; /* Adjusted line-height */
+  margin-bottom: 20px;
+}
+
+.decoration {
+  width: 5vw; /* Adjusted for relative size */
+  height: auto; /* Maintain aspect ratio */
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.sub-heading {
+  color: #c0c2ccff;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  font-size: 2vw; /* Adjusted for relative size */
+  letter-spacing: -0.22px;
+  line-height: 1.4; /* Adjusted line-height */
+  margin-bottom: 40px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+  flex-wrap: wrap; /* Allow wrapping */
+}
+
+.service-button, .learn-more-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent; /* Ensure no background color by default */
+  border: 2px solid transparent; 
+  margin: 10px; 
+  background-position: center;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more-button {
+  width: 210px;
+  height: 70px;
+}
+
+.service-button {
+  width: 210px;
+  height: 70px;
+}
+
+.button-text {
+  color: #ffffff;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 1rem; /* Adjusted for relative size */
+  letter-spacing: -0.18px;
+  line-height: 30px;
+}
+
+.service-button.active, .learn-more-button.active {
+  background-color:  #6A35FF;
+  /* Blueish purple color */
+  background-image: none;
+}
+
+.scrolling-text {
+  color: transparent;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  font-size: 2vw; /* Adjusted for relative size */
+  letter-spacing: -0.24px;
+  line-height: 1.4; /* Adjusted line-height */
+  background: linear-gradient(90deg, rgba(28,28,28,1) 0%, rgba(227,227,227,1) 50.1%, rgba(28,28,28,1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: scrolling-text 20s linear infinite;
+}
+
+@keyframes scrolling-text {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
