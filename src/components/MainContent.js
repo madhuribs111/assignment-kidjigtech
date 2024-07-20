@@ -71,12 +71,7 @@ const MainContent = () => {
             <span className="emoji">💡✨</span>
             <span className="text">From Ideas to Software Solutions</span>
             <span className="emoji">🌟✨</span>
-            <span className="text">From Ideas to Software Solutions</span>
-            <span className="emoji">💡✨</span>
-            <span className="text">From Ideas to Software Solutions</span>
-            <span className="emoji">💡✨</span>         <span className="text">From Ideas to Software Solutions</span>
-            <span className="emoji">💡✨</span>         <span className="text">From Ideas to Software Solutions</span>
-            <span className="emoji">💡✨</span>
+
           </div>
         </div>
       </div>
