@@ -39,7 +39,7 @@
   justify-content: center;
   width: 134px;
   height: 53px;
-  border-radius: 12px;
+  border-radius: 13px;
   color: #ffffff;
   font-family: 'Outfit', sans-serif;
   font-weight: 600;
@@ -51,5 +51,6 @@
   background-size: cover;
   background-position: center;
  margin-right: 35px;
+ border: 2px solid transparent;
   background-image: url('../assets/rectangle-4-3.svg');
 }

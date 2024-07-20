@@ -23,7 +23,10 @@
   pointer-events: none;
   transform: translate(-50%, -50%);
 }
-
+u{
+  text-decoration-color: #7F93FF;
+  text-decoration-thickness: 7px ;
+}
 
 .text-group {
   position: relative;

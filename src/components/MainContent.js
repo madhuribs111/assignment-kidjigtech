@@ -63,7 +63,7 @@ const MainContent = () => {
           </div>
         </div>
         <div className="scrolling-text">
-          From Ideas to Software Solutions 💡✨ From Ideas to Software Solutions 🌟✨ From Ideas to Software Solutions 💡✨ From Ideas to Software Solutions 🌟✨ From Ideas to Software Solutions 
+         From Ideas to Software Solutions 💡✨ From Ideas to Software Solutions 🌟✨ From Ideas to Software Solutions 💡✨ From Ideas to Software Solutions 🌟✨ From Ideas to Software Solutions 
         </div>
       </div>
     </div>
