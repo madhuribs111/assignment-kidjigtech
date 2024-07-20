@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import './MainContent.css';
 import BackgroundImage from '../assets/rectangle-9.svg';
 import Ellipse1 from '../assets/ellipse-1.svg';
-//import Ellipse2 from '../assets/ellipse-2.svg';
 import LearnMoreBtnBg from '../assets/rectangle-4-2.svg';
 
 const MainContent = () => {
@@ -38,7 +37,7 @@ const MainContent = () => {
   return (
     <div className="main-content" style={{ backgroundImage: `url(${BackgroundImage})` }}>
       <img ref={ellipseRef} src={Ellipse1} alt="Ellipse 1" className="ellipse-1" />
-   
+
       <div className="text-group">
         <div className="heading">
           Empowering Lives Through Innovative <u>AI</u> Technologies.
@@ -62,8 +61,23 @@ const MainContent = () => {
             <div className="button-text">Learn more</div>
           </div>
         </div>
-        <div className="scrolling-text">
-         From Ideas to Software Solutions 💡✨ From Ideas to Software Solutions 🌟✨ From Ideas to Software Solutions 💡✨ From Ideas to Software Solutions 🌟✨ From Ideas to Software Solutions 
+        <div className="scrolling-text-wrapper">
+          <div className="scrolling-text">
+            <span className="text">From Ideas to Software Solutions</span>
+            <span className="emoji">💡✨</span>
+            <span className="text">From Ideas to Software Solutions</span>
+            <span className="emoji">🌟✨</span>
+            <span className="text">From Ideas to Software Solutions</span>
+            <span className="emoji">💡✨</span>
+            <span className="text">From Ideas to Software Solutions</span>
+            <span className="emoji">🌟✨</span>
+            <span className="text">From Ideas to Software Solutions</span>
+            <span className="emoji">💡✨</span>
+            <span className="text">From Ideas to Software Solutions</span>
+            <span className="emoji">💡✨</span>         <span className="text">From Ideas to Software Solutions</span>
+            <span className="emoji">💡✨</span>         <span className="text">From Ideas to Software Solutions</span>
+            <span className="emoji">💡✨</span>
+          </div>
         </div>
       </div>
     </div>

@@ -13,19 +13,17 @@
   overflow: hidden; /* Hide overflow to prevent scrollbars */
 }
 
-.ellipse-1{
+.ellipse-1 {
   position: absolute;
   max-width: 100%; /* Ensure it doesn't overflow */
   height: auto; /* Maintain aspect ratio */
-}
-
-.ellipse-1 {
   pointer-events: none;
   transform: translate(-50%, -50%);
 }
-u{
+
+u {
   text-decoration-color: #7F93FF;
-  text-decoration-thickness: 7px ;
+  text-decoration-thickness: 7px;
 }
 
 .text-group {
@@ -64,13 +62,14 @@ u{
 
 .actions {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   gap: 20px;
   margin-bottom: 40px;
   flex-wrap: wrap; /* Allow wrapping */
 }
 
-.service-button, .learn-more-button {
+.service-button,
+.learn-more-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,9 +78,9 @@ u{
   background-repeat: no-repeat;
   background-size: cover;
   background-color: transparent; /* Ensure no background color by default */
-  border: 2px solid transparent; 
-  margin: 10px; 
-  background-position: center;
+  border: 2px solid transparent;
+  margin: 10px;
+  background-position:  center;
   transition: background-color 0.3s ease;
 }
 
@@ -104,28 +103,51 @@ u{
   line-height: 30px;
 }
 
-.service-button.active, .learn-more-button.active {
-  background-color:  #6A35FF;
+.service-button.active,
+.learn-more-button.active {
+  background-color: #6A35FF;
   /* Blueish purple color */
   background-image: none;
 }
 
+.scrolling-text-wrapper {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .scrolling-text {
+  display: inline-flex;
+  animation: scrolling-text 50s linear infinite;
+}
+
+.scrolling-text .text {
+  background: linear-gradient(90deg, rgba(28, 28, 28, 1) 0%, rgba(227, 227, 227, 1) 50.1%, rgba(28, 28, 28, 1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
   font-family: 'Outfit', sans-serif;
   font-weight: 400;
   font-size: 2vw; /* Adjusted for relative size */
   letter-spacing: -0.24px;
   line-height: 1.4; /* Adjusted line-height */
-  background: linear-gradient(90deg, rgba(28,28,28,1) 0%, rgba(227,227,227,1) 50.1%, rgba(28,28,28,1) 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: scrolling-text 20s linear infinite;
+  margin-right: 10px; /* Added margin for spacing */
+}
+
+.scrolling-text .emoji {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  font-size: 2vw; /* Adjusted for relative size */
+  letter-spacing: -0.24px;
+  line-height: 1.4; /* Adjusted line-height */
+  margin-right: 10px; /* Added margin for spacing */
 }
 
 @keyframes scrolling-text {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
