@@ -118,7 +118,7 @@ u {
 
 .scrolling-text {
   display: inline-flex;
-  animation: scrolling-text 50s linear infinite;
+  animation: scrolling-text 25s linear infinite;
 }
 
 .scrolling-text .text {
